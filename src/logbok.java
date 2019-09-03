@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class logbok {
     public static void main(String[] args){
         System.out.println(
@@ -8,5 +10,8 @@ public class logbok {
                 "5 Läs in \n" +
                 "6 Avsluta");
 
+
+        Scanner visa = new Scanner(System.in);
+            
     }
 }
