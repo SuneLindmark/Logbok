@@ -12,6 +12,24 @@ public class logbok {
 
 
         Scanner visa = new Scanner(System.in);
-
+        int val = visa.nextInt();
+        if (val == 1){
+            System.out.println("Du har valt Visa");
+        }
+        if (val == 2){
+           System.out.println("Du har valt Lägg till post");
+        }
+        if (val == 3){
+            System.out.println("Du har valt Uppdatera");
+        }
+        if (val == 4){
+            System.out.println("Du har valt Spara");
+        }
+        if (val == 5){
+            System.out.println("Du har valt Läs in");
+        }
+        if (val == 6){
+            System.out.println("Du har valt Avsluta");
+        }
     }
 }
