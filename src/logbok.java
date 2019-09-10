@@ -15,9 +15,13 @@ public class logbok {
         int val = visa.nextInt();
         if (val == 1){
             System.out.println("Du har valt Visa");
+            visa.nextLine();
         }
         if (val == 2){
            System.out.println("Du har valt Lägg till post");
+           visa.nextLine();
+           String läggt = visa.nextLine();
+           System.out.println(läggt);
         }
         if (val == 3){
             System.out.println("Du har valt Uppdatera");
