@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class logbok {
@@ -9,6 +10,7 @@ public class logbok {
                 "4 Spara \n" +
                 "5 Läs in \n" +
                 "6 Avsluta");
+        ArrayList logbok;
 
 
         Scanner visa = new Scanner(System.in);
