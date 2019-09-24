@@ -10,7 +10,7 @@ public class logbok {
                 "4 Spara \n" +
                 "5 Läs in \n" +
                 "6 Avsluta");
-        ArrayList logbok;
+        ArrayList<LogEntry> logbok = new ArrayList<>();
 
 
         Scanner visa = new Scanner(System.in);
@@ -23,7 +23,9 @@ public class logbok {
            System.out.println("Du har valt Lägg till post");
            visa.nextLine();
            String läggt = visa.nextLine();
-           System.out.println(läggt);
+           LogEntry post = new LogEntry(läggt);
+           logbok.add(post);
+           System.out.println(post);
         }
         if (val == 3){
             System.out.println("Du har valt Uppdatera");
@@ -36,6 +38,7 @@ public class logbok {
         }
         if (val == 6){
             System.out.println("Du har valt Avsluta");
+            System.out.println("Avslutar...");
         }
     }
 }
